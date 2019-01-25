@@ -77,8 +77,13 @@ PRODUCT_MODEL := Moto X4
 PRODUCT_MANUFACTURER := Motorola
 PRODUCT_RELEASE_NAME := payton
 
+#device maintainer 
+PRODUCT_PROPERTY_OVERRIDES += \
+ 	ro.havoc.maintainer=Unoffical-SyberHexen
+
 PRODUCT_BUILD_PROP_OVERRIDES += \
         PRODUCT_NAME=payton \
         PRIVATE_BUILD_DESC="payton-user 8.0.0 OPWS27.57-25-6-10 12 release-keys"
 
+# Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
 BUILD_FINGERPRINT := motorola/payton/payton:8.0.0/OPWS27.57-25-6-10/12:user/release-keys
