@@ -67,7 +67,7 @@ else
 endif
 
 # Official HavocOS
-HAVOC_BUILD_TYPE := Unofficial
+HAVOC_BUILD_TYPE := Official
 
 # Device identifiers
 PRODUCT_DEVICE := payton
@@ -79,7 +79,7 @@ PRODUCT_RELEASE_NAME := payton
 
 #device maintainer 
 PRODUCT_PROPERTY_OVERRIDES += \
- 	ro.havoc.maintainer=Unoffical-SyberHexen
+ 	ro.havoc.maintainer=SyberHexen
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
         PRODUCT_NAME=payton \
