@@ -66,8 +66,8 @@ else
     TARGET_RECOVERY_FSTAB := device/motorola/sdm660-common/rootdir/etc/fstab.qcom
 endif
 
-# Official HavocOS
-HAVOC_BUILD_TYPE := Official
+# Official Havoc-OS
+export export HAVOC_BUILD_TYPE := Official
 
 # Device identifiers
 PRODUCT_DEVICE := payton
