@@ -45,7 +45,6 @@ TARGET_SCREEN_WIDTH := 1080
 
 # FM
 PRODUCT_PACKAGES += \
-    FM2 \
     libqcomfm_jni \
     init.qti.fm.sh \
     qcom.fmradio
