@@ -83,7 +83,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
         PRODUCT_NAME=payton \
-        PRIVATE_BUILD_DESC="payton-user 8.0.0 OPWS27.57-25-6-10 12 release-keys"
+        PRIVATE_BUILD_DESC="payton-user 9 PPW29.69-39-1 baeeff release-keys"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := motorola/payton/payton:8.0.0/OPWS27.57-25-6-10/12:user/release-keys
+BUILD_FINGERPRINT := motorola/payton/payton:9/PPW29.69-39-1/baeeff:user/release-keys
