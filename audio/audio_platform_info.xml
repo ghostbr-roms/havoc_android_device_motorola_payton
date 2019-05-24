@@ -59,6 +59,7 @@
 	<usecase name="USECASE_ADSPD_DSP1_TEXT" type="in" id="45" />
 	<usecase name="USECASE_ADSPD_DSP2_TEXT" type="in" id="43" />
 	<usecase name="USECASE_ADSPD_DSP3_TEXT" type="in" id="44" />
+	<usecase name="USECASE_INCALL_MUSIC_UPLINK" type="out" id="27" />
 </pcm_ids>
 
 <backend_names>

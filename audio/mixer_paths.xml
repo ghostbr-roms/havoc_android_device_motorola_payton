@@ -311,7 +311,7 @@
 	<!-- Incall Recording End -->
 
 	<!-- Incall Music -->
-	<ctl name="Incall_Music Audio Mixer MultiMedia2" value="0" />
+	<ctl name="Incall_Music Audio Mixer MultiMedia9" value="0" />
 	<ctl name="Incall_Music_2 Audio Mixer MultiMedia9" value="0" />
 	<!-- Incall Music End -->
 
@@ -519,6 +519,26 @@
 		<ctl name="MultiMedia2 Mixer SLIM_8_TX" value="1" />
 	</path>
 
+	<path name="compress-voip-call">	
+		<ctl name="SLIM_0_RX_Voice Mixer Voip" value="1" />	
+		<ctl name="Voip_Tx Mixer SLIM_0_TX_Voip" value="1" />	
+	</path>	
+
+ 	<path name="compress-voip-call bt-sco">	
+		<ctl name="SLIM_7_RX_Voice Mixer Voip" value="1" />	
+		<ctl name="Voip_Tx Mixer SLIM_7_TX_Voip" value="1" />	
+	</path>	
+
+ 	<path name="compress-voip-call bt-sco-wb">	
+		<ctl name="BT SampleRate" value="KHZ_16" />	
+		<path name="compress-voip-call bt-sco" />	
+	</path>	
+
+ 	<path name="compress-voip-call afe-proxy">	
+		<ctl name="AFE_PCM_RX_Voice Mixer Voip" value="1" />	
+		<ctl name="Voip_Tx Mixer AFE_PCM_TX_Voip" value="1" />	
+	</path>	
+
 	<path name="afe-proxy-playback afe-proxy">
 	</path>
 
@@ -641,28 +661,37 @@
 		<path name="incall-rec-uplink-and-downlink" />
 	</path>
 
-	<path name="incall_music_uplink">
-		<ctl name="Incall_Music Audio Mixer MultiMedia2" value="1" />
-	</path>
-
-	<path name="incall_music_uplink bt-sco">
-		<path name="incall_music_uplink" />
-	</path>
-
-	<path name="incall_music_uplink bt-sco-wb">
-		<path name="incall_music_uplink" />
-	</path>
-
-	<path name="incall_music_uplink2">
+	<path name="incall-music-uplink">
+		<ctl name="Incall_Music Audio Mixer MultiMedia9" value="1" />
 		<ctl name="Incall_Music_2 Audio Mixer MultiMedia9" value="1" />
 	</path>
 
-	<path name="incall_music_uplink2 bt-sco">
-		<path name="incall_music_uplink2" />
+	<path name="incall-music-uplink bt-sco">
+		<path name="incall-music-uplink" />
 	</path>
 
-	<path name="incall_music_uplink2 bt-sco-wb">
-		<path name="incall_music_uplink2" />
+	<path name="incall-music-uplink bt-sco-wb">
+		<path name="incall-music-uplink" />
+	</path>
+
+	<path name="incall-music-uplink afe-proxy">
+		<path name="incall-music-uplink" />
+	</path>
+
+	<path name="incall-music-uplink headphones">
+		<path name="incall-music-uplink" />
+	</path>
+
+	<path name="incall-music-uplink speaker-and-headphones">
+		<path name="incall-music-uplink" />
+	</path>
+
+	<path name="incall-music-uplink speaker-and-bt-sco">
+		<path name="incall-music-uplink" />
+	</path>
+
+	<path name="incall-music-uplink speaker-and-bt-sco-wb">
+		<path name="incall-music-uplink" />
 	</path>
 
 	<path name="hfp-sco">
