@@ -31,7 +31,6 @@ BOARD_HAS_QCA_FM_SOC := "cherokee"
 
 # Kernel
 TARGET_KERNEL_CONFIG := x_payton_defconfig
-TARGET_KERNEL_SOURCE := kernel/motorola/msm8998
 
 # NFC
 BOARD_NFC_CHIPSET := pn553
@@ -47,9 +46,5 @@ TARGET_HAS_NO_WLAN_STATS := true
 # Treble
 PRODUCT_SHIPPING_API_LEVEL := 25
 
-# Wifi
-WIFI_DRIVER_OPERSTATE_PATH := "/sys/class/net/wlan0/operstate"
-
 # inherit from the proprietary version
 -include vendor/motorola/payton/BoardConfigVendor.mk
-
