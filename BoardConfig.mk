@@ -31,6 +31,7 @@ BOARD_HAS_QCA_FM_SOC := "cherokee"
 
 # Kernel
 TARGET_KERNEL_CONFIG := x_payton_defconfig
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
 # NFC
 BOARD_NFC_CHIPSET := pn553
