@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/havoc_payton.mk
+    $(LOCAL_DIR)/aosp_payton.mk
